@@ -1,0 +1,50 @@
+{
+  "name": "legal-contracts-management",
+  "version": "1.0.0",
+  "description": "Complete legal contracts management system with Strapi + MySQL + React + TypeScript",
+  "keywords": [
+    "legal",
+    "contracts",
+    "strapi",
+    "react",
+    "typescript",
+    "mysql"
+  ],
+  "author": "Legal Contracts Team",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup:backend": "cd backend && npm install",
+    "setup:frontend": "cd frontend && npm install",
+    "setup:all": "npm run setup:backend && npm run setup:frontend",
+    "dev:backend": "cd backend && npm run develop",
+    "dev:frontend": "cd frontend && npm run dev",
+    "seed": "cd backend && node scripts/seed.js"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "autoprefixer": "^10.4.21",
+    "next": "^15.3.2",
+    "postcss": "^8.5.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.13",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
