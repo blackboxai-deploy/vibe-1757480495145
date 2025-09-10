@@ -13,15 +13,15 @@
   "author": "Legal Contracts Team",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "setup:backend": "cd backend && npm install",
     "setup:frontend": "cd frontend && npm install",
     "setup:all": "npm run setup:backend && npm run setup:frontend",
-    "dev:backend": "cd backend && npm run develop",
-    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "node init && cd backend && npm run develop",
+    "dev:frontend": "node init && cd frontend && npm run dev",
     "seed": "cd backend && node scripts/seed.js"
   },
   "workspaces": [
